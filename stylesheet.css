@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+html {
+    font-size: 1rem;
+}
+body {
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #121212;
+}
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+p {
+    font-size: 1.15rem;
+}
+li {
+    list-style: none;
+}
+.wrapper {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+.section-title {
+    display: inline-block;
+    font-size: 2.75rem;
+    border-bottom: 5px solid rgb(49, 104, 247);
+}
+
+/*--------------------------- 
+    Header 
+----------------------------*/
+#header {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 150px;
+}
+#header .header-contents {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    top: 0px;
+    left: 0px;
+}
+
+.site-title {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.site-title img{
+    border-radius: 50%;
+}
+#navi {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+#navi ul {
+    display: flex;
+    gap: 20px;
+}
+
+.hover {
+    padding-bottom: 5px;
+    position: relative;
+}
+.hover::before {
+    background: #ff701e;
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+}
+.hover:hover::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+#navi ul li a img{
+    width: 120px;
+    height: 120px;
+}
+
+
+/*--------------------------- 
+    Main 
+----------------------------*/
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+}
+#mainvisual {
+    margin-top: 50px;
+}
+#mainvisual p {
+    font-size: 85px;
+}
+
+/*--------------------------- 
+    About 
+----------------------------*/
+#about {
+    width: 450px;
+    height: 500px;
+    text-align: left;
+    margin-top: 50px;
+}
+#about .message-content {
+    margin-top: 25px;
+    padding-left: 20px;
+    border-left: 3px solid gray;
+    font-size: 1.15rem;
+}
+#about .background {
+    margin-top: 20px;
+}
+/*--------------------------- 
+    Work 
+----------------------------*/
+#work {
+    text-align: center;
+}
+#work .work-content {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+/*--------------------------- 
+    Skill 
+----------------------------*/
+#skill {
+    text-align: center;
+    height: 100vh;
+}
+.skill-contents {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.skill-title  {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.skill-one:nth-child(-n+2) .skill-description {
+    margin-top: 60px;
+}
+.skill-one:nth-child(n+3) .skill-description {
+    margin-top: 50px;
+}
+.skill-one:nth-child(2n-1) .skill-description {
+    margin-right: 50px;
+}
+/*------------------------ 
+    Contact
+-------------------------*/
+#contact { 
+    color: #ff701e;
+}
+
+/*------------------------ 
+    FOOTER
+-------------------------*/
