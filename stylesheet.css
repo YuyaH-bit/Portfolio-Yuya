@@ -20,7 +20,7 @@ li {
 }
 .wrapper {
     max-width: 1000px;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
 }
 .section-title {
@@ -98,8 +98,6 @@ li {
     About 
 ----------------------------*/
 #about {
-    width: 450px;
-    height: 500px;
     text-align: left;
     margin-top: 50px;
 }
@@ -183,7 +181,87 @@ li {
     border-radius: 100vh; 
     border: none;
     cursor: pointer;
+    margin-top: 25px;
 }
 /*------------------------ 
     FOOTER
 -------------------------*/
+#footer {
+    text-align: center;
+}
+
+/*------------------------ 
+    Tablet device
+-------------------------*/
+@media screen and (max-width: 959px) {
+    p {
+        font-size: 1.5rem;
+    }
+    /*--------------------------- 
+        Main 
+    ----------------------------*/
+    .two-columns {
+        flex-flow: column;
+    }
+    #mainvisual p {
+        font-size: 75px;
+    }
+    /*--------------------------- 
+        About 
+    ----------------------------*/
+    #about {
+        margin-top: 0;
+    }
+    /*------------------------ 
+        Contact
+    -------------------------*/
+    .contact-item {
+        width: 30%;
+    }
+    .contact-body {
+        width: 50%;
+    }
+}
+
+/*------------------------ 
+    Smartphone
+-------------------------*/
+@media screen and (max-width: 480px) {
+    /*--------------------------- 
+        Header
+    ----------------------------*/   
+    #navi ul li:nth-child(2) {
+        display: none;
+    }
+    /*--------------------------- 
+        Main 
+    ----------------------------*/
+    #mainvisual p {
+        font-size: 60px;
+    }    
+    /*--------------------------- 
+        Skill 
+    ----------------------------*/
+    .skill-contents {
+        display: block;
+    }
+    .skill-description {
+        word-wrap: break-word;
+        text-align: left;
+    }
+    .skill-one:nth-child(-n+2) .skill-description {
+        margin-top: 0px;
+    }
+    .skill-one:nth-child(n+3) .skill-description {
+        margin-top: 0px;
+    }
+    .skill-one:nth-child(2n-1) .skill-description {
+        margin-right: 0px;
+    }
+    /*------------------------ 
+        Contact
+    -------------------------*/
+    .contact-item, .contact-body {
+        width: 100%;
+    }
+}
