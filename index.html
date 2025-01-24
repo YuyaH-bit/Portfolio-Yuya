@@ -20,13 +20,13 @@
             </h1>
             <nav id="navi">
                 <ul>
-                    <li>
-                        <a href="#" class="hover">
+                    <li class="hover">
+                        <a href="#" >
                             <img src="./img/github-mark.svg" alt="github-mark">
                         </a>
                     </li>
-                    <li>
-                        <a href="#" class="hover">
+                    <li  class="hover">
+                        <a href="#">
                             <img src="./img/wordpress-mark.svg" alt="wordpress-mark">
                         </a>
                     </li>
@@ -48,7 +48,7 @@
                         I'm the most passionate engineer you'll ever come across, dedicated to learning new front-end technologies and applying them to create impactful solutions.
                     </p>
                     <p class="background">
-                        I'm currently in search of new opportunities. If any one finds this page interesting, I look forward to hearing from you.
+                        I'm currently in search of new opportunities. If anyone finds this page interesting, I look forward to hearing from you.
                     </p>
                 </div>
             </section>
@@ -75,7 +75,7 @@
                 </div>
                 <div class="skill-one">
                     <p class="skill-title">
-                        Front end
+                        Back end
                     </p>
                     <p class="skill-description">
                         TexttexttextTexttexttextTexttexttextTexttexttext<br>
@@ -86,7 +86,7 @@
                 </div>
                 <div class="skill-one">
                     <p class="skill-title">
-                        Front end
+                        Database
                     </p>
                     <p class="skill-description">
                         TexttexttextTexttexttextTexttexttextTexttexttext<br>
@@ -97,7 +97,7 @@
                 </div>
                 <div class="skill-one">
                     <p class="skill-title">
-                        Front end
+                        Other
                     </p>
                     <p class="skill-description">
                         TexttexttextTexttexttextTexttexttextTexttexttext<br>
@@ -110,18 +110,18 @@
         </section>
         <section id="contact">
             <h2 class="section-title">Contact</h2>
-            <div class="contact-space mt-5">
+            <div class="contact-space">
                 <!-- Contact Form -->
                 <form class="contact-form" method="POST" action="confirm.php">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" placeholder="Full name" required /><br>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" placeholder="Email" required /><br>
-                    <label for="Subject">Subject:</label>
-                    <input type="text" name="subject" placeholder="Subject" required ><br>
-                    <label for="message">Message:</label>
-                    <textarea name="message" placeholder="message" cols="30" rows="10" required></textarea><br>
-                    <input type="submit" placeholder="Send Message" value="Submit">
+                    <label class="contact-item" for="name" class="contact-item">Name</label>
+                    <input class="contact-body" type="text" name="name" placeholder="Full name" required /><br>
+                    <label class="contact-item" for="email">Email</label>
+                    <input class="contact-body" type="email" name="email" placeholder="Email" required /><br>
+                    <label class="contact-item" for="Subject">Subject</label>
+                    <input class="contact-body" type="text" name="subject" placeholder="Subject" required ><br>
+                    <label class="contact-item" for="message">Message</label>
+                    <textarea class="contact-body" name="message" placeholder="Message" cols="30" rows="5" required></textarea><br>
+                    <input class="contact-submit hover" type="submit" placeholder="Send Message" value="Submit">
                 </form> 
             </div>
         </section>
@@ -129,6 +129,5 @@
     <footer id="footer">
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
