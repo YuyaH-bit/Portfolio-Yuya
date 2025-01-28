@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- HEADER -->
     <header id="header">
         <div class="header-contents">
             <h1 class="site-title">
@@ -21,7 +22,7 @@
             <nav id="navi">
                 <ul>
                     <li class="hover">
-                        <a href="#" >
+                        <a href="https://github.com/YuyaH-bit" >
                             <img src="./img/github-mark.svg" alt="github-mark">
                         </a>
                     </li>
@@ -34,12 +35,14 @@
             </nav>
         </div>
     </header>
-
+    <!-- Main -->
     <main id="main" class="wrapper">
         <div class="two-columns">
+            <!-- MainVisual -->
             <div id="mainvisual">
                 <p>Yuya<br>Engineering<br>Portfolio</p>
             </div>
+            <!-- About -->
             <section id="about">
                 <h2 class="section-title">About Me</h2>
                 <div class="message-content">
@@ -53,34 +56,92 @@
                 </div>
             </section>
         </div>
+        <!-- Work -->
         <section id="work">
             <h2 class="section-title">Work</h2>
-            <div class="work-content">
-                This section is currently in production.
-            </div>
+            <ul class="grid">
+                <li class="grid-item">
+                    <article class="card">
+                    <a href="https://yuyah-bit.github.io/gh-pages/flowerSampleSite" class="card-link">
+                        <span class="card-label">New</span>
+                        <img class="card-image"  src="./img/flowerSiteImage.jpg" alt="flowerSiteImage">
+                        <div class="card-info">
+                            <time class="card-time" datetime="2024-01-01">2024.01</time>
+                            <h2 class="card-headline">Flower Sample Site</h2>
+                            <p class="card-descrition">Reproduction of sample site using HTMl, CSS and jQuery</p>
+                        </div>
+                        <dl class="avator">
+                            <dt class="avator-name">Individual Development</dt>
+                            <dd class="avator-image">
+                                <img src="./img/portfolio-logo.jpg" alt="Author">
+                            </dd>
+                        </dl>
+                    </a>
+                </article>
+                </li>
+                <li class="grid-item">
+                    <article class="card">
+                        <a href="https://yuyah-bit.github.io/gh-pages/IncSampleSite/" class="card-link">
+                            <span class="card-label">New</span>
+                            <img class="card-image"  src="./img/IncSiteImage.jpg" alt="IncSiteImage">
+                            <div class="card-info">
+                                <time class="card-time" datetime="2024-01-01">2024.01</time>
+                                <h2 class="card-headline">Company Sample Site</h2>
+                                <p class="card-descrition">Reproduction of sample site using HTMl, CSS</p>
+                            </div>
+                            <dl class="avator">
+                                <dt class="avator-name">Individual Development</dt>
+                                <dd class="avator-image">
+                                    <img src="./img/portfolio-logo.jpg" alt="Author">
+                                </dd>
+                            </dl>
+                        </a>
+                    </article>
+                </li>
+                <li class="grid-item">
+                    <article class="card">
+                        <a href="https://yuyah-bit.github.io/gh-pages/EnglishSampleSite/" class="card-link">
+                            <span class="card-label">New</span>
+                            <img class="card-image"  src="./img/englishSiteImage.jpg" alt="English Site Image">
+                            <div class="card-info">
+                                <time class="card-time" datetime="2024-01-01">2024.01</time>
+                                <h2 class="card-headline">English Sample Site</h2>
+                                <p class="card-descrition">Reproduction of sample site using HTMl, CSS and jQuery</p>
+                            </div>
+                            <dl class="avator">
+                                <dt class="avator-name">Individual Development</dt>
+                                <dd class="avator-image">
+                                    <img src="./img/portfolio-logo.jpg" alt="Author">
+                                </dd>
+                            </dl>
+                        </a>
+                    </article>
+                </li>
+            </ul>
         </section>
+        <!-- Skill -->
         <section id="skill">
             <h2 class="section-title">Skillset</h2>
             <div class="skill-contents">
                 <div class="skill-one">
                     <p class="skill-title">
-                        Front end
+                        Language
                     </p>
                     <p class="skill-description">
-                        TexttexttextTexttexttextTexttexttextTexttexttext<br>
-                        TexttexttextTexttexttextTexttexttextTexttexttext<br>
-                        TexttexttextTexttexttextTexttexttextTexttexttext<br>
+                        <b>HTML・CSS</b>: I have some develop experience by myself.<br>
+                        <b>JavaScript・PHP</b>: I have a few develop experience,<br>
+                        and I'm learning.<br>
+                        <b>Java</b>: I have quite develop experience for work.<br>
                     </p>
 
                 </div>
                 <div class="skill-one">
                     <p class="skill-title">
-                        Back end
+                        OS
                     </p>
                     <p class="skill-description">
-                        TexttexttextTexttexttextTexttexttextTexttexttext<br>
-                        TexttexttextTexttexttextTexttexttextTexttexttext<br>
-                        TexttexttextTexttexttextTexttexttextTexttexttext<br>
+                        <b>Windows11</b><br>
+                        <b>Linux(Ubuntu, Red Hat Linux)</b><br>
                     </p>
                     
                 </div>
@@ -89,9 +150,9 @@
                         Database
                     </p>
                     <p class="skill-description">
-                        TexttexttextTexttexttextTexttexttextTexttexttext<br>
-                        TexttexttextTexttexttextTexttexttextTexttexttext<br>
-                        TexttexttextTexttexttextTexttexttextTexttexttext<br>
+                        <b>MySQL</b>: I have basic skill for Database.<br>
+                        I have develop a web application that<br>
+                        connect Database to JDBC.<br>
                     </p>
                     
                 </div>
@@ -100,14 +161,14 @@
                         Other
                     </p>
                     <p class="skill-description">
-                        TexttexttextTexttexttextTexttexttextTexttexttext<br>
-                        TexttexttextTexttexttextTexttexttextTexttexttext<br>
-                        TexttexttextTexttexttextTexttexttextTexttexttext<br>
+                        <b>Source Management</b>: Git, Docker<br>
+                        <b>Document</b>: Word, Excel, Google Spreadsheets, Google Document<br>
                     </p>
                     
                 </div>
             </div>
         </section>
+        <!-- Contact -->
         <section id="contact">
             <h2 class="section-title">Contact</h2>
             <div class="contact-space">
@@ -126,6 +187,7 @@
             </div>
         </section>
     </main>
+    <!-- Footer -->
     <footer id="footer">
         <p>&copy;YuyaPortfolio</p>
     </footer>
